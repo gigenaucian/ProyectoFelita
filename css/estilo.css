@@ -431,14 +431,16 @@ ul a.menu__a {
     display: flex;
     font-size: 30px; }
 
-#carruselHome {
-  grid-area: carouselHome;
+#carouselExampleIndicators {
   margin: auto;
-  width: 80%;
-  height: 500px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 50px; }
+  padding: 40px; }
+
+.imageCarrusel {
+  height: 600px;
+  width: 1200px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 10%; }
 
 .sectionQuien {
   display: grid;
@@ -637,6 +639,13 @@ ul a.menu__a {
     .titulares h2 {
       display: flex;
       font-size: 20px; }
+  #carouselExampleIndicators {
+    margin: auto;
+    padding: 20px; }
+  .imageCarrusel {
+    height: 500px;
+    width: 600px;
+    border-radius: 10%; }
   .sectionQuien {
     display: grid;
     background-color: #dabfe0;

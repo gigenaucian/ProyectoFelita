@@ -106,20 +106,20 @@ ul a.menu__a{
     }
 }
 
- 
-
-#carruselHome{
-    grid-area: carouselHome ;
-   margin: auto;
-   width: 80%;
-   height: 500px;
-   display: flex;
-   justify-content:flex-end;
-   
-   padding: 50px;
-
+#carouselExampleIndicators{
+    margin:auto;
+    padding: 40px;
+    
 }
 
+.imageCarrusel{
+    height:600px;
+    width: 1200px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 10%;
+    
+}
 
 
 .sectionQuien{
