@@ -1,0 +1,260 @@
+@import "secciones/cartas.scss";
+@import "secciones/mixins.scss";
+@import "secciones/contacto.scss";
+@import "secciones/preguntas.scss";
+@import "secciones/productos.scss";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+#grillaPrincipal{
+    display: grid;
+    height: 2500px;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 5% 65% 10%;
+    grid-template-areas: 
+                        "header"
+                        "nav"
+                        "section"
+                        "footer";
+    
+}
+
+// Menu
+.header{
+    background-color: rgb(235, 209, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.logo{
+    
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+    margin: 5px; 
+    object-fit: cover;
+}
+
+#grillaMenu{
+    background-color: rgb(217, 209, 218);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    justify-items: center;
+    list-style-type:  none;
+    margin: 0;
+    padding: 0px;
+    color: rgb(87, 85, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+   
+}
+  
+    
+
+ul a.menu__a{
+    text-decoration: none;
+    color: rgb(140, 134, 146);
+   
+}
+
+//fin menu
+
+ // section
+.sectionHome{
+    display: grid;
+    background-image: url("/fondo.jpg");
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 50%;
+    grid-template-areas: 
+                        "titulares"
+                        "carouselHome"
+                        "masVendido";
+
+}
+.titulares{
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px;
+    
+    
+   & h1{
+        display: flex;
+        font-size: 40px;
+
+       
+    }
+    & h2{
+        display: flex;
+        font-size: 30px;
+    }
+}
+
+ 
+
+#carruselHome{
+    grid-area: carouselHome ;
+   margin: auto;
+   width: 80%;
+   height: 500px;
+   display: flex;
+   justify-content:flex-end;
+   
+   padding: 50px;
+
+}
+
+
+
+.sectionQuien{
+    display: grid;
+    background-image: url("/fondo.jpg");
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: 
+                        "titulares"
+                        "tarjetasMix"
+                        "comentario";
+
+}
+
+.comentario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+    &__p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        font-style: italic;
+        
+
+    }
+}
+
+
+//--footer-----
+
+.footer{
+    background-color: rgb(233, 227, 233);
+   
+    padding: 60px 0;
+}
+.contenedorFooter{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(233, 227, 233);
+    box-sizing: border-box;
+
+    &__fila{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    &__col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    &__ul{
+        list-style: none;
+        
+    }
+    &__li a{
+        text-decoration: none;
+        color: dimgray;
+        font-style: italic;
+        text-transform: capitalize;
+        display: block;
+        align-items: center;
+        transition: all 0.3s ease;
+        margin:5px;
+    }
+    &__h{
+        padding: 20px;
+        font-style: italic;
+        font-size: 20px;
+        color: darkslategray;
+        text-decoration:underline ;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+        text-align: justify;
+    }
+    &__p{
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:10px;
+        text-align: justify;
+
+    }
+    &__li a:hover{
+        color: coral;
+        padding-left: 8px;
+
+    }
+    
+    
+    }
+    .redes__ul{
+        display: flex;
+        list-style: none;}
+    .redes__img{
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 90%;
+        
+        
+    }    
+   
+
+    
+
+
+
+
+@import "secciones/responsive.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+
+ $tamanioTarjeta:800px;
+
+ #tarjetasMix{
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    
+    
+    
+}  
+ 
+ @mixin tarjeta ($tamanioTarjeta){
+    background-color: rgb(247, 226, 245);
+    width: 400px;
+    height: $tamanioTarjeta;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    
+    div.imagen {
+        background-color: honeydew;
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        
+            .quiensoyfoto{
+                width: 100%;
+                height: 100%;
+                
+            }
+        
+    }
+
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: lightslategrey;
+        font-style: italic;
+        margin: 0 auto;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    p{  
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        font-weight: 100;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        text-align: center;
+        
+       
+    }
+    }
+
+    section{
+        
+        .tarjeta-1{
+            @include tarjeta ($tamanioTarjeta*1.2);
+            overflow-y: auto;
+
+        }
+        .tarjeta-2{
+            @include tarjeta ($tamanioTarjeta);
+            overflow-y: auto;
+        }
+        .tarjeta-3{
+            @include tarjeta($tamanioTarjeta*1.3);
+            overflow-y: auto;
+        }
+    
+    }
