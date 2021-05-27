@@ -80,7 +80,7 @@
   flex-wrap: wrap; }
 
 section .tarjeta-1 {
-  background-color: #f7e2f5;
+  background-color: #fcf7fb;
   width: 400px;
   height: 960px;
   margin: 2rem;
@@ -89,7 +89,7 @@ section .tarjeta-1 {
   box-sizing: border-box;
   overflow-y: auto; }
   section .tarjeta-1 div.imagen {
-    background-color: honeydew;
+    background-color: #ebe7e9;
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -115,7 +115,7 @@ section .tarjeta-1 {
     text-align: center; }
 
 section .tarjeta-2 {
-  background-color: #f7e2f5;
+  background-color: #fcf7fb;
   width: 400px;
   height: 800px;
   margin: 2rem;
@@ -124,7 +124,7 @@ section .tarjeta-2 {
   box-sizing: border-box;
   overflow-y: auto; }
   section .tarjeta-2 div.imagen {
-    background-color: honeydew;
+    background-color: #ebe7e9;
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -150,7 +150,7 @@ section .tarjeta-2 {
     text-align: center; }
 
 section .tarjeta-3 {
-  background-color: #f7e2f5;
+  background-color: #fcf7fb;
   width: 400px;
   height: 1040px;
   margin: 2rem;
@@ -159,7 +159,7 @@ section .tarjeta-3 {
   box-sizing: border-box;
   overflow-y: auto; }
   section .tarjeta-3 div.imagen {
-    background-color: honeydew;
+    background-color: #ebe7e9;
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -650,7 +650,7 @@ ul.slider li:target {
   flex-wrap: wrap; }
 
 section .tarjeta-1 {
-  background-color: #f7e2f5;
+  background-color: #fcf7fb;
   width: 400px;
   height: 960px;
   margin: 2rem;
@@ -659,7 +659,7 @@ section .tarjeta-1 {
   box-sizing: border-box;
   overflow-y: auto; }
   section .tarjeta-1 div.imagen {
-    background-color: honeydew;
+    background-color: #ebe7e9;
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -685,7 +685,7 @@ section .tarjeta-1 {
     text-align: center; }
 
 section .tarjeta-2 {
-  background-color: #f7e2f5;
+  background-color: #fcf7fb;
   width: 400px;
   height: 800px;
   margin: 2rem;
@@ -694,7 +694,7 @@ section .tarjeta-2 {
   box-sizing: border-box;
   overflow-y: auto; }
   section .tarjeta-2 div.imagen {
-    background-color: honeydew;
+    background-color: #ebe7e9;
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -720,7 +720,7 @@ section .tarjeta-2 {
     text-align: center; }
 
 section .tarjeta-3 {
-  background-color: #f7e2f5;
+  background-color: #fcf7fb;
   width: 400px;
   height: 1040px;
   margin: 2rem;
@@ -729,7 +729,7 @@ section .tarjeta-3 {
   box-sizing: border-box;
   overflow-y: auto; }
   section .tarjeta-3 div.imagen {
-    background-color: honeydew;
+    background-color: #ebe7e9;
     width: 90%;
     height: 300px;
     margin: 0 auto;

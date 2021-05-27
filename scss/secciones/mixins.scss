@@ -15,7 +15,7 @@
 }  
  
  @mixin tarjeta ($tamanioTarjeta){
-    background-color: rgb(247, 226, 245);
+    background-color: rgb(252, 247, 251);
     width: 400px;
     height: $tamanioTarjeta;
     margin: 2rem;
@@ -24,7 +24,7 @@
     box-sizing: border-box;
     
     div.imagen {
-        background-color: honeydew;
+        background-color: rgb(235, 231, 233);
         width: 90%;
         height: 300px;
         margin: 0 auto;
