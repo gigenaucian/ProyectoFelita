@@ -269,11 +269,20 @@
         .comentario{
             width: 100%;
             display: flex;
-            justify-content:center;
+            height: 10px;
+            margin: 0;
+           
+           
+            
+            
+            
+
+            
             &__p{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 15px;
+            font-size: 10px;
             font-style: italic;
+            padding: 0;
             }
         }
 
