@@ -1,11 +1,10 @@
 #masVendido {
-  padding: 60px;
+  padding: 20px;
   width: 100%;
-  margin: 40px;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100%;
-  grid-template-areas: "carta carta carta carta"; }
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .carta {
   margin-top: 100px;
@@ -77,7 +76,8 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 section .tarjeta-1 {
   background-color: #f7e2f5;
@@ -253,7 +253,7 @@ select {
   background-size: 100vw 100vh;
   grid-template-columns: 100%;
   grid-template-rows: 20% 70% 10%;
-  grid-template-areas: "titulares"  "preguntas" "comentario"; }
+  grid-template-areas: "titulares" "preguntas" "comentario"; }
 
 .preguntas {
   width: 100%;
@@ -294,7 +294,7 @@ select {
 @media only screen and (max-width: 768px) {
   .sectionPreguntas {
     display: grid;
-    background-image: url("/fondo.jpg");
+    background-image: url("../Multimedia optimizado/fondo.jpg");
     background-attachment: fixed;
     background-size: 100vw 100vh;
     grid-template-columns: 100%;
@@ -431,16 +431,60 @@ ul a.menu__a {
     display: flex;
     font-size: 30px; }
 
-#carouselExampleIndicators {
+.container {
   margin: auto;
-  padding: 40px; }
+  background-color: #d6d1d1;
+  width: 100%;
+  padding: 30px;
+  height: 500px; }
 
-.imageCarrusel {
-  height: 600px;
-  width: 1200px;
-  object-fit: cover;
-  box-sizing: border-box;
-  border-radius: 10%; }
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+ul.slider {
+  position: relative;
+  width: 100%;
+  height: 400px; }
+
+ul.slider li {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity .5s; }
+
+ul.slider li img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; }
+
+ul.slider li:first-child {
+  opacity: 1; }
+
+ul.slider li:target {
+  opacity: 1; }
+
+.menu {
+  text-align: center;
+  margin: 20px; }
+
+.menu li {
+  display: inline-block;
+  text-align: center; }
+
+.menu li a {
+  display: inline-block;
+  color: #f7f5f5;
+  text-decoration: none;
+  background-color: #dfbad4;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 100%; }
 
 .sectionQuien {
   display: grid;
@@ -474,7 +518,7 @@ ul a.menu__a {
     display: flex;
     flex-wrap: wrap; }
   .contenedorFooter__col {
-    width: 25%;
+    width: 33%;
     padding: 0 15px; }
   .contenedorFooter__ul {
     list-style: none; }
@@ -520,13 +564,12 @@ ul a.menu__a {
   border-radius: 90%; }
 
 #masVendido {
-  padding: 60px;
+  padding: 20px;
   width: 100%;
-  margin: 40px;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100%;
-  grid-template-areas: "carta carta carta carta"; }
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .carta {
   margin-top: 100px;
@@ -592,13 +635,280 @@ ul a.menu__a {
   height: 100%;
   width: 100%; }
 
-@media only screen and (max-width: 768px) {
+#tarjetasMix {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+section .tarjeta-1 {
+  background-color: #f7e2f5;
+  width: 400px;
+  height: 960px;
+  margin: 2rem;
+  padding: 30px;
+  display: block;
+  box-sizing: border-box;
+  overflow-y: auto; }
+  section .tarjeta-1 div.imagen {
+    background-color: honeydew;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 1rem; }
+    section .tarjeta-1 div.imagen .quiensoyfoto {
+      width: 100%;
+      height: 100%; }
+  section .tarjeta-1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightslategrey;
+    font-style: italic;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px; }
+  section .tarjeta-1 p {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: center; }
+
+section .tarjeta-2 {
+  background-color: #f7e2f5;
+  width: 400px;
+  height: 800px;
+  margin: 2rem;
+  padding: 30px;
+  display: block;
+  box-sizing: border-box;
+  overflow-y: auto; }
+  section .tarjeta-2 div.imagen {
+    background-color: honeydew;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 1rem; }
+    section .tarjeta-2 div.imagen .quiensoyfoto {
+      width: 100%;
+      height: 100%; }
+  section .tarjeta-2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightslategrey;
+    font-style: italic;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px; }
+  section .tarjeta-2 p {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: center; }
+
+section .tarjeta-3 {
+  background-color: #f7e2f5;
+  width: 400px;
+  height: 1040px;
+  margin: 2rem;
+  padding: 30px;
+  display: block;
+  box-sizing: border-box;
+  overflow-y: auto; }
+  section .tarjeta-3 div.imagen {
+    background-color: honeydew;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 1rem; }
+    section .tarjeta-3 div.imagen .quiensoyfoto {
+      width: 100%;
+      height: 100%; }
+  section .tarjeta-3 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightslategrey;
+    font-style: italic;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px; }
+  section .tarjeta-3 p {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: center; }
+
+@media (max-width: 1391px) {
   #grillaPrincipal {
     display: grid;
-    height: 100%;
+    height: auto;
     width: 100vw;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 5% 70% 5%;
+    grid-template-rows: 10% 5% 80% 5%;
+    grid-template-areas: "header" "nav" "section" "footer"; }
+  #masVendido {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%  50%;
+    grid-template-areas: "carta carta" "carta carta"; }
+  .carta {
+    overflow: hidden;
+    margin: 20px;
+    padding: 5px;
+    width: 300px;
+    height: auto;
+    background-color: #faebf4;
+    border-style: groove; }
+  #tarjetasMix {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  section .tarjeta-1 {
+    background-color: #f7e2f5;
+    width: 400px;
+    height: 700px;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto; }
+    section .tarjeta-1 div.imagen {
+      background-color: honeydew;
+      width: 90%;
+      height: 250px;
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+      section .tarjeta-1 div.imagen .quiensoyfoto {
+        width: 100%;
+        height: 100%; }
+    section .tarjeta-1 h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: lightslategrey;
+      font-style: italic;
+      margin: 0 auto;
+      font-size: 20px;
+      text-align: center;
+      padding: 8px; }
+    section .tarjeta-1 p {
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-weight: 100;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      text-align: center; }
+  section .tarjeta-2 {
+    background-color: #f7e2f5;
+    width: 400px;
+    height: 500px;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto; }
+    section .tarjeta-2 div.imagen {
+      background-color: honeydew;
+      width: 90%;
+      height: 250px;
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+      section .tarjeta-2 div.imagen .quiensoyfoto {
+        width: 100%;
+        height: 100%; }
+    section .tarjeta-2 h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: lightslategrey;
+      font-style: italic;
+      margin: 0 auto;
+      font-size: 20px;
+      text-align: center;
+      padding: 8px; }
+    section .tarjeta-2 p {
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-weight: 100;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      text-align: center; }
+  section .tarjeta-3 {
+    background-color: #f7e2f5;
+    width: 400px;
+    height: 800px;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto; }
+    section .tarjeta-3 div.imagen {
+      background-color: honeydew;
+      width: 90%;
+      height: 250px;
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+      section .tarjeta-3 div.imagen .quiensoyfoto {
+        width: 100%;
+        height: 100%; }
+    section .tarjeta-3 h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: lightslategrey;
+      font-style: italic;
+      margin: 0 auto;
+      font-size: 20px;
+      text-align: center;
+      padding: 8px; }
+    section .tarjeta-3 p {
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-weight: 100;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      text-align: center; }
+  #galeria {
+    display: grid;
+    background-image: url("../Multimedia optimizado/fondo.jpg");
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 85% 10%;
+    grid-template-areas: " titulares "   "galeria"  "comentario";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .contenedor-galeria {
+    display: flex;
+    max-height: 2500px;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    margin: auto; } }
+
+@media only screen and (max-width: 497px) {
+  #grillaPrincipal {
+    display: grid;
+    height: auto;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 5% 80% 5%;
     grid-template-areas: "header" "nav" "section" "footer"; }
   #grillaMenu {
     display: grid;
@@ -620,38 +930,44 @@ ul a.menu__a {
     margin: 5px;
     width: 100%;
     object-fit: cover; }
-  .sectionGrid {
+  .sectionHome {
     display: grid;
-    background-color: #dabfe0;
+    background-image: url("../Multimedia optimizado/fondo.jpg");
     grid-template-columns: 100%;
-    grid-template-rows: 5% 45% 50%;
+    grid-template-rows: 3% 27% 70%;
     grid-template-areas: "titulares" "carrusel" "masVendido"; }
+  #masVendido {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+  .carta {
+    margin: 5px;
+    padding: 2px;
+    width: 285px;
+    height: auto;
+    background-color: #faebf4;
+    border-style: groove; }
   .titulares {
     justify-content: center;
     align-items: center;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-    padding: 10px; }
+    padding: 8px; }
     .titulares h1 {
       display: flex;
       font-size: 30px; }
     .titulares h2 {
       display: flex;
-      font-size: 20px; }
-  #carouselExampleIndicators {
-    margin: auto;
-    padding: 20px; }
-  .imageCarrusel {
-    height: 500px;
-    width: 600px;
-    border-radius: 10%; }
+      font-size: 8px; }
   .sectionQuien {
     display: grid;
-    background-color: #dabfe0;
+    background-image: url("../Multimedia optimizado/fondo.jpg");
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas: "titulares" "tarjetasMix" "comentario"; }
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulares" "tarjetasMix"; }
   .comentario {
     width: 100%;
     display: flex;
@@ -660,75 +976,6 @@ ul a.menu__a {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 15px;
       font-style: italic; }
-  #masVendido {
-    width: 100%;
-    height: 100%;
-    margin: 2px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "carta carta" "carta carta"; }
-  .carta {
-    margin-top: 30px;
-    padding: 6px;
-    width: 200px;
-    height: 450px;
-    background-color: #faebf4;
-    border-style: groove; }
-    .carta__img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200px;
-      width: 180px;
-      padding: 5px;
-      background-color: #d3c3d2; }
-    .carta__contenedor {
-      display: block;
-      margin: 3px;
-      width: 180px;
-      height: 50px; }
-    .carta__lista {
-      list-style: none;
-      padding: .3em .5em;
-      margin-right: .5em;
-      background-color: #eecedf;
-      border-radius: .3em;
-      font-size: 10px;
-      display: flex;
-      justify-content: space-around; }
-    .carta__item {
-      display: inline;
-      padding: .3em .5em;
-      margin-right: .5em; }
-    .carta__a {
-      text-decoration: none;
-      color: #646262;
-      font-size: 10px;
-      font-style: italic; }
-    .carta__descripcion {
-      font-size: 12px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-style: italic;
-      font-weight: 100;
-      text-align: center;
-      padding: 4px; }
-    .carta__link {
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      color: #646262;
-      font-style: italic; }
-  .fotoCarta {
-    display: flex;
-    width: 70%;
-    height: 80%;
-    align-items: center;
-    justify-content: center;
-    transition: height 3s, width 3s; }
-  .fotoCarta:hover {
-    height: 100%;
-    width: 100%; }
   .titulares {
     justify-content: center;
     align-items: center;
@@ -750,35 +997,18 @@ ul a.menu__a {
     background-attachment: fixed;
     background-size: 100vw 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 85% 10%;
+    grid-template-rows: 5% 90% 5%;
     grid-template-areas: " titulares "   "galeria"  "comentario";
     grid-column-gap: 10px;
-    grid-row-gap: 10px; }
+    grid-row-gap: 5px; }
   .contenedor-galeria {
     display: flex;
-    max-height: 2000px;
+    max-height: 2500px;
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 2000px;
     margin: auto; }
-  .galeria__img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    object-fit: cover;
-    filter: brightness(70%); }
-  .galeria__img:hover {
-    filter: brightness(100%); }
-  .comentario {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 2px; }
-    .comentario__p {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 18px;
-      font-style: italic; }
   .footer {
     background-color: #e9e3e9;
     grid-area: footer;
@@ -788,5 +1018,130 @@ ul a.menu__a {
     margin: auto;
     background-color: #e9e3e9; }
     .contenedorFooter__col {
-      width: 50%;
-      margin-bottom: 30px; } }
+      width: 100%;
+      margin-bottom: 30px; }
+  #tarjetasMix {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  div.imagen {
+    background-color: honeydew;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 1rem; }
+  .quiensoyfoto {
+    width: 100%;
+    height: 100%; }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightslategrey;
+    font-style: italic;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px; }
+  p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: center; }
+  section .tarjeta-1 {
+    background-color: #f7e2f5;
+    width: 400px;
+    height: 700px;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto; }
+  section .tarjeta-2 {
+    background-color: #f7e2f5;
+    width: 400px;
+    height: 500px;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto; }
+  section .tarjeta-3 {
+    background-color: #f7e2f5;
+    width: 400px;
+    height: 800px;
+    margin: 2rem;
+    padding: 30px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto; }
+  .comentario {
+    width: 100%;
+    height: 15%;
+    display: block;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px; }
+    .comentario__p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      font-style: italic; }
+    .comentario #masVendido {
+      padding: 10px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap; }
+    .comentario .carta {
+      overflow: hidden;
+      margin: 20px;
+      padding: 5px;
+      width: 300px;
+      height: auto;
+      background-color: #faebf4;
+      border-style: groove; }
+      .comentario .carta__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 290px;
+        padding: 10px;
+        background-color: #d3c3d2; }
+        .comentario .carta__img__contenedor {
+          display: block;
+          margin: 5px;
+          width: 290px;
+          height: 90px; }
+        .comentario .carta__img__lista {
+          list-style: none;
+          padding: .3em .5em;
+          margin-right: .5em;
+          background-color: #eecedf;
+          border-radius: .3em;
+          font-size: 8px;
+          display: flex;
+          justify-content: space-around; }
+        .comentario .carta__img__item {
+          display: inline;
+          padding: .3em .5em;
+          margin-right: .5em; }
+        .comentario .carta__img__a {
+          text-decoration: none;
+          color: #646262;
+          font-size: 15px;
+          font-style: italic; }
+        .comentario .carta__img__descripcion {
+          font-size: 18px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-style: italic;
+          font-weight: 100;
+          text-align: center;
+          padding: 15px; }
+      .comentario .carta .btn {
+        display: block; } }

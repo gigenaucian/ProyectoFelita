@@ -8,7 +8,6 @@
     grid-template-rows: 20% 70% 10%;
     grid-template-areas: 
                         "titulares"
-                        
                         "preguntas"
                         "comentario";
 
@@ -64,7 +63,7 @@
 @media only screen and ( max-width:768px){
     .sectionPreguntas{
         display: grid;
-        background-image: url("/fondo.jpg");
+        background-image: url("../Multimedia\ optimizado/fondo.jpg");
         background-attachment: fixed;
         background-size: 100vw 100vh;
         

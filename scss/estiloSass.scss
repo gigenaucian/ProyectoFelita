@@ -9,7 +9,6 @@
 body{
     margin: 0;
     padding: 0;
-    
 
 }
 
@@ -33,8 +32,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 .logo{
     
@@ -62,10 +59,11 @@ body{
   
     
 
-ul a.menu__a{
+ ul a.menu__a{
     text-decoration: none;
     color: rgb(140, 134, 146);
-   
+    
+
 }
 
 //fin menu
@@ -106,20 +104,77 @@ ul a.menu__a{
     }
 }
 
-#carouselExampleIndicators{
-    margin:auto;
-    padding: 40px;
-    
-}
 
-.imageCarrusel{
-    height:600px;
-    width: 1200px;
-    object-fit: cover;
-    box-sizing: border-box;
-    border-radius: 10%;
+//carrusel respons.
+.container{
+    margin: auto;
+    background-color: rgb(214, 209, 209);
+    width: 100%;
+    padding: 30px;
+    height: 500px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width:100%;
+    height: 400px;
     
-}
+  }
+  
+  ul.slider li {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+     
+      transition: opacity .5s;
+      
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; 
+  }
+  
+  ul.slider li:target {
+      opacity: 1;
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: rgb(247, 245, 245);
+    text-decoration: none;
+    background-color: rgb(223, 186, 212);
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 100%;
+    
+  }
 
 
 .sectionQuien{
@@ -171,7 +226,7 @@ ul a.menu__a{
 
     }
     &__col{
-        width: 25%;
+        width: 33%;
         padding: 0 15px;
     }
     &__ul{
@@ -229,14 +284,15 @@ ul a.menu__a{
         
         
     }    
-   
+
 
     
 
 
 
-
+ 
 @import "secciones/responsive.scss";
+
 
 
 
