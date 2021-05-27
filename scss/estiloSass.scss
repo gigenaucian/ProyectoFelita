@@ -213,59 +213,59 @@ body{
     background-color: rgb(233, 227, 233);
    
     padding: 60px 0;
-}
-.contenedorFooter{
-    width: 100%;
-    margin: auto;
-    background-color: rgb(233, 227, 233);
-    box-sizing: border-box;
+    }
+    .contenedorFooter{
+        width: 100%;
+        margin: auto;
+        background-color: rgb(233, 227, 233);
+        box-sizing: border-box;
 
-    &__fila{
-        display: flex;
-        flex-wrap: wrap;
+        &__fila{
+            display: flex;
+            flex-wrap: wrap;
 
-    }
-    &__col{
-        width: 33%;
-        padding: 0 15px;
-    }
-    &__ul{
-        list-style: none;
-        
-    }
-    &__li a{
-        text-decoration: none;
-        color: dimgray;
-        font-style: italic;
-        text-transform: capitalize;
-        display: block;
-        align-items: center;
-        transition: all 0.3s ease;
-        margin:5px;
-    }
-    &__h{
-        padding: 20px;
-        font-style: italic;
-        font-size: 20px;
-        color: darkslategray;
-        text-decoration:underline ;
-        text-transform: capitalize;
-        margin-bottom: 30px;
-        position: relative;
-        text-align: justify;
-    }
-    &__p{
-        font-style: italic;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size:10px;
-        text-align: justify;
+        }
+        &__col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        &__ul{
+            list-style: none;
+            
+        }
+        &__li a{
+            text-decoration: none;
+            color: dimgray;
+            font-style: italic;
+            text-transform: capitalize;
+            display: block;
+            align-items: center;
+            transition: all 0.3s ease;
+            margin:5px;
+        }
+        &__h{
+            padding: 20px;
+            font-style: italic;
+            font-size: 20px;
+            color: darkslategray;
+            text-decoration:underline ;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            position: relative;
+            text-align: justify;
+        }
+        &__p{
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:10px;
+            text-align: justify;
 
-    }
-    &__li a:hover{
-        color: coral;
-        padding-left: 8px;
+        }
+        &__li a:hover{
+            color: coral;
+            padding-left: 8px;
 
-    }
+        }
     
     
     }

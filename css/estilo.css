@@ -518,7 +518,7 @@ ul.slider li:target {
     display: flex;
     flex-wrap: wrap; }
   .contenedorFooter__col {
-    width: 33%;
+    width: 25%;
     padding: 0 15px; }
   .contenedorFooter__ul {
     list-style: none; }
@@ -901,7 +901,18 @@ section .tarjeta-3 {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 2000px;
-    margin: auto; } }
+    margin: auto; }
+  .footer {
+    background-color: #e9e3e9;
+    grid-area: footer;
+    padding: 60px 0; }
+  .contenedorFooter {
+    width: 100%;
+    margin: auto;
+    background-color: #e9e3e9; }
+    .contenedorFooter__col {
+      width: 33%;
+      margin-bottom: 30px; } }
 
 @media only screen and (max-width: 497px) {
   #grillaPrincipal {

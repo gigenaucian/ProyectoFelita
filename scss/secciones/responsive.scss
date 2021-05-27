@@ -141,7 +141,26 @@
         margin: auto;
     }
 
-}
+    .footer{
+        background-color: rgb(233, 227, 233);
+        grid-area: footer;
+        padding: 60px 0;
+            }
+        .contenedorFooter{
+        width: 100%;
+        margin: auto;
+        background-color: rgb(233, 227, 233);
+         &__col{
+        width: 33%;
+        margin-bottom: 30px;
+        }
+        }
+
+
+
+
+
+    }
 
     @media only screen and ( max-width:497px) {
         #grillaPrincipal{
