@@ -20,7 +20,8 @@
         
         padding: 10px;
         width: 100%;
-        margin: auto;
+        margin: 40px;
+        padding:20px;
         display:grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50%  50%;
@@ -31,8 +32,8 @@
      .carta{
        
         overflow: hidden;
-        margin: 20px;
-         padding: 5px;
+        margin: auto;
+        padding:20px;
         width:300px;
         height: auto;
         background-color:rgb(250, 235, 244);
@@ -305,10 +306,6 @@
         margin: auto;
         }
 
-
-
-
-        //--footer-----
 
         .footer{
         background-color: rgb(233, 227, 233);
