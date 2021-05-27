@@ -57,12 +57,18 @@ body{
    
 }
   
-    
-
  ul a.menu__a{
     text-decoration: none;
     color: rgb(140, 134, 146);
+    font-size: 20px;
+    text-transform: capitalize;
     
+    
+}
+
+ul a.menu__a:hover{
+    
+    color: rgb(230, 30, 163);
 
 }
 
@@ -270,20 +276,20 @@ body{
     
     }
     .redes__ul{
-        display: flex;
-        list-style: none;}
+            display: flex;
+            list-style: none;}
     .redes__img{
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        
-        margin: 0 10px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 90%;
-        
-        
-    }    
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 90%;
+            
+            
+        }    
 
 
     
